@@ -1,0 +1,84 @@
+# Root .gitignore for EHR System
+
+# Environment Variables
+/backend/rust/.env
+/backend/python/.env
+/frontend/.env
+*.env
+*.env.*
+
+# Rust Build Artifacts
+/backend/rust/target/
+/backend/rust/.rustup/
+/backend/rust/Cargo.lock  # Optional, exclude if not needed in repo
+
+# Python Virtual Environment and Cache
+/backend/python/venv/
+/backend/python/.venv/
+/backend/python/__pycache__/
+/backend/python/*.pyc
+/backend/python/*.pyo
+/backend/python/*.pyd
+/backend/python/.pytest_cache/
+/backend/python/.mypy_cache/
+/backend/python/.tox/
+/backend/python/.eggs/
+/backend/python/*.egg-info/
+
+# React/Node.js Build Artifacts
+/frontend/node_modules/
+/frontend/build/
+/frontend/.cache/
+/frontend/dist/
+/frontend/*.log
+/frontend/npm-debug.log*
+/frontend/yarn.lock
+/frontend/package-lock.json  # Optional, exclude if not needed
+
+# AWS Credentials and Configuration
+.aws/
+*.pem
+*.key
+*.cert
+aws_config
+aws_credentials
+
+# Docker
+Dockerfile
+.dockerignore
+*.dockerignore
+docker-compose.yml
+docker-compose.yaml
+
+# Editor and IDE Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-Specific Files
+.DS_Store
+Thumbs.db
+
+# Logs and Temporary Files
+*.log
+*.tmp
+temp/
+tmp/
+*.bak
+*.swp
+
+# Testing and Coverage Reports
+/coverage/
+/htmlcov/
+*.cov
+*.xml
+
+# Build and Distribution Files
+*.tar.gz
+*.zip
+
+# AWS-Specific Artifacts
+/.aws-sam/
+/.chalice/
+/aws_lambda_build/

@@ -1,0 +1,10 @@
+[package]
+name = "rust"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+actix-web = "4" # For building REST APIs
+serde = { version = "1.0", features = ["derive"] } # For JSON serialization
+rustls = "0.21" # For TLS configuration
+tokio = { version = "1", features = ["full"] } # For async runtime
